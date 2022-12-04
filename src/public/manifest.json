@@ -1,0 +1,20 @@
+{
+    "manifest_version": 3,
+    "name": "vite-react-ts-tailwind-extension",
+    "version": "0.1.0",
+    "description": "A template for creating a web extension using Vite, React, TypeScript, and Tailwind CSS.",
+    "homepage_url": "https://github.com/marwanhawari/vite-react-ts-tailwind-extension",
+    "content_scripts": [
+        {
+            "matches": ["https://github.com/*"],
+            "css": ["assets/index.css"],
+            "js": ["content.js"]
+        }
+    ],
+    "web_accessible_resources": [
+        {
+            "resources": ["assets/*"],
+            "matches": ["<all_urls>"]
+        }
+    ]
+}
